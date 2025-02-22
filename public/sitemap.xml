@@ -2,50 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:59910/actualites/</loc>
+    <loc>http://localhost:62131/actualites/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59910/</loc>
+    <loc>http://localhost:62131/calendrier/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59910/calendar/</loc>
+    <loc>http://localhost:62131/contact/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59910/contact/</loc>
+    <loc>http://localhost:62131/devenir-membre/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59910/devenir-membre/</loc>
+    <loc>http://localhost:62131/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59910/calendar/event1/</loc>
+    <loc>http://localhost:62131/nous-soutenir/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59910/calendar/event2/</loc>
+    <loc>http://localhost:62131/qui-sommes-nous/</loc>
     <lastmod>2024-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:59910/calendar/event3/</loc>
-    <lastmod>2024-11-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:62131/categories/</loc>
   </url><url>
-    <loc>http://localhost:59910/calendar/event4/</loc>
-    <lastmod>2024-11-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:59910/calendar/event5/</loc>
-    <lastmod>2024-11-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:59910/actualites/article1/</loc>
-    <lastmod>2024-11-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:59910/qui-sommes-nous/</loc>
-    <lastmod>2024-11-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:59910/actualites/article2/</loc>
-    <lastmod>2024-11-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:59910/actualites/article3/</loc>
-    <lastmod>2024-11-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:59910/categories/</loc>
-  </url><url>
-    <loc>http://localhost:59910/tags/</loc>
+    <loc>http://localhost:62131/tags/</loc>
   </url>
 </urlset>

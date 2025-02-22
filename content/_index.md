@@ -1,7 +1,7 @@
 +++
 date = '2024-11-09'
 draft = false
-title = 'Agissons Ensemble !'
+title = 'Fully en Transition'
 [params]
 subtitle = "Découvrez des actions locales et concrètes pour bâtir une société plus respectueuse de l'environnement."
 +++

@@ -1,48 +1,40 @@
 {{ define "body" }}
-<section class="hero has-background-primary-15 is-halfheight has-text-centered">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <p class="title has-text-primary-15-invert">{{ .Title }}</p>
+<section class="hero is-halfheight has-text-centered">
+  <div class="hero-body" id="hero-background"></div>
+</section>
+
+<section class="section is-max-desktop has-text-centered">
+  <div class="container is-max-desktop columns is-8">
+    <div class="content column has-text-centered">
+      <section id="introduction" class="section">
+        <h1 class="title">Fully en Transition</h1>
+        <p class="content is-normal">
+          Fully en Transition est une association citoyenne réunissant des
+          habitants et habitantes de Fully engagés pour une commune plus
+          résiliente et solidaire. Nous œuvrons pour renforcer la résilience de
+          la commune face aux défis environnementaux et sociaux en menant des
+          projets collaboratifs autour de l’écoresponsabilité et de la
+          solidarité.
+        </p>
+        <a href="/qui-sommes-nous">En savoir plus sur l'association</a>
+      </section>
+      <section id="evenement" class="section">
+        <h2 class="title">Notre prochain évènement</h2>
+        <p class="content is-normal">
+          L'association organise de nombreux évènements durant l'année, ouverts
+          à toutes et tous !
+        </p>
+        <p><a href="/calendrier">Consulter notre calendrier</a></p>
+      </section>
+      <section id="actualites" class="section">
+        <h2 class="title">Actualités</h2>
+        <p class="content is-normal">
+          Découvrez les dernières nouvelles de l'association
+        </p>
+        <p><a href="/actualites">Découvrir tous les articles</a></p>
+      </section>
     </div>
   </div>
 </section>
 
-<section class="section is-max-desktop has-text-centered">
-  <section class="section has-text-centered">
-    <section id="introduction" class="section">
-      <h1 class="title">Fully en Transition</h1>
-      <p class="content is-normal">
-        Fully en Transition est une association à but non-lucratif, créée en
-        2021 à Fully. <br />Elle a pour mission d'organiser des actions
-        concrètes pour protéger notre planète et bâtir une société plus
-        respectueuse de l'environnement.
-      </p>
-      <p><a href="/qui-sommes-nous">En savoir plus sur l'association</a></p>
-    </section>
-
-    <section class="section has-text-centered">
-      <figure class="image is-inline-block" style="max-width: 60%">
-        <img src="/home/deco.png" alt="fully en transition logo décoration" />
-      </figure>
-    </section>
-
-    <section id="evenement" class="section">
-      <h2 class="title">Notre prochain évènement</h2>
-      <p class="content is-normal">
-        L'association organise de nombreux évènements durant l'année, ouverts à
-        toutes et tous !
-      </p>
-      <p>Voici le prochain à venir :</p>
-      <p><a href="/calendar">Consulter notre calendrier</a></p>
-    </section>
-
-    <section id="actualites" class="section">
-      <h2 class="title">Actualités</h2>
-      <p class="content is-normal">
-        Découvrez les dernières nouvelles de l'association
-      </p>
-      <p><a href="/calendar">Découvrir tous les articles</a></p>
-    </section>
-  </section>
-</section>
 {{ end }}

@@ -35,3 +35,8 @@ a {
 .fa-solid {
   color: #eab82d !important;
 }
+
+#hero-background {
+  background-image: url("/home/home-hero-image.jpeg");
+  background-position: top;
+}

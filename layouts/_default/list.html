@@ -1,6 +1,6 @@
 {{ define "body" }}
-<section class="hero has-background-primary-15 is-halfheight has-text-centered">
-  <div class="hero-body">
+<section  class="hero has-background-primary-15 is-halfheight has-text-centered">
+    <div class="hero-body">
     <div class="container has-text-centered">
       <p class="title has-text-primary-15-invert">{{ .Title }}</p>
       <p class="subtitle has-text-primary-15-invert">{{ .Params.subtitle}}</p>
@@ -46,5 +46,9 @@
 </section>
 
 {{ else }}
-<div>Pas de contenu pour le moment ! Revenez plus tard</div>
+<section class="section is-max-desktop has-text-centered">
+  <p class="content is-normal">
+    Pas de contenu pour le moment ! Revenez plus tard
+  </p>
+</section>
 {{ end }} {{ end }}
