@@ -38,9 +38,6 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          # Set the Git configuration for Hugo
-          git config --global --add safe.directory /__w/${{ github.repository }}
-
           # Build the website
           hugo --gc --minify
 
@@ -49,7 +46,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: public
 
   # Deployment job
   deploy:
