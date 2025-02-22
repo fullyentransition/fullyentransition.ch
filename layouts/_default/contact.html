@@ -1,0 +1,77 @@
+{{ define "body" }}
+<section
+  class="hero has-background-primary-15 is-halfheight has-text-centered"
+  style="padding-bottom: 3rem; padding-top: 3rem"
+>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title has-text-primary-15-invert" style="margin-bottom: 1rem">
+        {{ .Title }}
+      </p>
+      <p class="subtitle has-text-primary-15-invert" style="margin-top: 1rem">
+        {{ .Params.subtitle}}
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 3rem; padding-bottom: 3rem">
+  <div class="container is-max-desktop">{{ .Content }}</div>
+</section>
+
+<section class="section" style="padding-top: 3rem; padding-bottom: 3rem">
+  <div class="container">
+    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem">
+      <div class="container">
+        <div
+          class="container has-text-centered is-normal"
+          style="margin-bottom: 2rem"
+        >
+          <h2 class="title" style="margin-bottom: 1rem">Nous contacter</h2>
+          <p class="content is-normal" style="margin-bottom: 1rem">
+            Des questions, des idées de projets ou envie de nous rejoindre ?
+          </p>
+          <p class="content is-normal" style="margin-bottom: 1rem">
+            N'hésitez pas à nous contacter, nous serions ravis de faire votre
+            rencontre !
+          </p>
+        </div>
+
+        <div class="container is-small" style="margin-top: 2rem">
+          <div class="field" style="margin-bottom: 2rem">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input
+                class="input is-danger is-small"
+                type="email"
+                placeholder="Votre adresse Email"
+                value=" "
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+            <p class="help is-danger">Cet email n'est pas valide</p>
+          </div>
+
+          <div class="field is-small" style="margin-bottom: 2rem">
+            <label class="label is-small">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Votre message"></textarea>
+            </div>
+          </div>
+
+          <div class="field is-grouped" style="margin-top: 2rem">
+            <div class="control">
+              <button class="button is-warning">Envoyer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+{{ end }}

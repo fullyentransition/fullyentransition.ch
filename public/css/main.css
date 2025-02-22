@@ -1,0 +1,37 @@
+/* Dans le dossier assets, on y trouve les fichiers css et js
+Le dossier assets, il y a un prétraitement des données, tandis que le dossier static se sera des photos plutôt*/
+
+.page-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+:root {
+  --custom-color: #eab82d;
+}
+
+.test {
+  background-color: var(--custom-color);
+}
+
+.navbar-brand > a:nth-child(1) {
+  --bulma-navbar-item-img-max-height: 5rem !important;
+}
+
+.navbar-burger {
+  --bulma-navbar-burger-color: #eab82d;
+}
+
+a {
+  --bulma-link-text: #eab82d !important;
+}
+
+.fa-regular,
+.fa-solid {
+  color: #eab82d !important;
+}

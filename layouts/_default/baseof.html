@@ -1,0 +1,38 @@
+<!-- template par défaut à toutes les pages-->
+
+<!DOCTYPE html>
+<html
+  lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="{{ .Summary }}" />
+    <title>
+      {{ if .IsHome }} {{ site.Title }} {{ else }} {{ printf "%s · %s" .Title
+      site.Title }} {{ end }}
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css"
+    />
+    {{ partial "head/css.html" . }} {{ partial "head/js.html" . }}
+  </head>
+  <body class="has-navbar-fixed-top page-wrapper">
+    <div class="content-wrapper">
+      {{ partial "header.html" . }} {{ block "body" . }} {{ end }}
+    </div>
+    {{ partial "footer.html" . }}
+  </body>
+</html>
+
+<script
+  src="https://kit.fontawesome.com/93e36f143b.js"
+  crossorigin="anonymous"
+></script>

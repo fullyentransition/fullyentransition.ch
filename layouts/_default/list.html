@@ -1,0 +1,50 @@
+{{ define "body" }}
+<section class="hero has-background-primary-15 is-halfheight has-text-centered">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title has-text-primary-15-invert">{{ .Title }}</p>
+      <p class="subtitle has-text-primary-15-invert">{{ .Params.subtitle}}</p>
+    </div>
+  </div>
+</section>
+<div>{{ .Content }}</div>
+{{ if .Pages }}
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-multiline">
+      {{ range $index, $value := .Pages }}
+      <div class="column is-one-third">
+        <a href="{{.Page.Permalink}}">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="/actualites/test.jpeg" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">{{.Title}}</p>
+                <p class="subtitle is-6">par {{.Params.auteur}}</p>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="content has-text-justified">
+                {{ .Summary }} {{ if .Truncated }}[...]{{ end }}
+              </div>
+              <br />
+              <time datetime="2016-1-1">{{.Params.publishingDate}}</time>
+            </div>
+          </div>
+        </div>
+      </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ else }}
+<div>Pas de contenu pour le moment ! Revenez plus tard</div>
+{{ end }} {{ end }}
