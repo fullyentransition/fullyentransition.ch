@@ -1,6 +1,8 @@
----
-title: "Contact"
-draft: false
-date: "2024-11-09"
-layout: "contact" # This defines a custom layout for this page
----
++++
+date = '2024-11-09'
+draft = false
+title = 'Nous contacter'
+layout = "contact"
+[params]
+subtitle = 'Des questions, projets ou idées ?'
++++
