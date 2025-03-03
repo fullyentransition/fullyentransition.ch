@@ -14,7 +14,7 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-multiline">
-      {{ range $index, $value := .Pages }}
+      {{ range (.Pages.ByParam "systemDate") }}
       <div class="column is-one-third">
         <a href="{{ .Page.Permalink }}">
           <div class="card">
