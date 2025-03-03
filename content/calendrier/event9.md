@@ -7,7 +7,7 @@ title = "Journée vélo"
 location = 'Fully, Belle Usine'
 dateEvent = '04.04.25'
 systemDate = '2025-04-04'
-time = 'De 9h à 16h'
+time = 'De 9h à 15h'
 picture = 'bourse_velo'
 +++
 
@@ -19,7 +19,7 @@ De 9h à 12h, bourse aux vélos organisée par Pro Vélo et présence de la Rust
 
 ### Repair café
 
-De 10h à 16h, repair café
+De 10h à 15h, repair café
 
 ### Table ronde
 
