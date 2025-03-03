@@ -1,21 +1,59 @@
 {{ define "body" }}
 <section
   class="hero has-background-primary-15 is-halfheight has-text-centered"
-  style="background-image: url('/actualites/{{.Params.picture}}.jpeg'); background-size: cover; background-position: center;"
+  style="background-image: url('/calendar/{{.Params.picture}}.jpeg'); background-size: cover; background-position: center;"
 >
   <div class="hero-body">
-    <div class="container has-text-centered">
-      <div class="container has-text-centered">
-        <p class="title has-text-primary-15-invert">{{ .Title }}</p>
-        <p class="subtitle has-text-primary-15-invert">{{ .Params.subtitle}}</p>
+    <div class="container has-text-centered"></div>
+  </div>
+</section>
+
+<section class="section is-max-desktop has-text-centered">
+  <div class="container">
+    <h1 class="title">{{.Title}}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container has-text-centered">
+    <div class="container is-max-desktop has-text-centered">
+      <div class="columns is-multiline has-text-centered">
+        <div class="column is-one-third has-text-centered">
+          <div class="container">
+            <span class="icon is-medium mb-3">
+              <!-- Ajout de mb-3 directement ici -->
+              <i class="fa-solid fa-location-pin fa-2x"></i>
+            </span>
+            <p class="title is-5">{{.Params.location}}</p>
+          </div>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <div>
+            <span class="icon is-medium mb-3">
+              <!-- Ajout de mb-3 directement ici -->
+              <i class="fa-regular fa-calendar fa-2x"></i>
+            </span>
+            <p class="title is-5">{{.Params.dateEvent}}</p>
+          </div>
+        </div>
+        <div class="column is-one-third has-text-centered">
+          <div>
+            <span class="icon is-medium mb-3">
+              <!-- Ajout de mb-3 directement ici -->
+              <i class="fa-solid fa-clock fa-2x"></i>
+            </span>
+            <p class="title is-5">{{.Params.time}}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section is-max-desktop has-text-centered">
-  <div class="container is-max-desktop columns is-8">
-    <div class="content column has-text-justified">{{ .Content }}</div>
+<section class="section">
+  <div class="container is-max-desktop has-text-centered content">
+    {{.Content}}
   </div>
 </section>
+
 {{ end }}

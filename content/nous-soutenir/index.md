@@ -9,7 +9,8 @@ subtitle = 'Soutenez-nous !'
 
 ## Contribuons ensemble
 
-En soutenant Fully en Transition, vous nous permettez de mener à bien des projets concrets pour une commune plus solidaire et résiliente. Chaque don, quel que soit son montant, nous aide à concrétiser nos actions. Merci pour votre engagement à nos côtés !
+Si vous soutenez notre démarche mais n’avez pas de temps à donner, n’hésitez pas à nous donner de l’argent ! 😉
+Notre association n’a pas de but lucratif. Cet argent nous permettra de financer nos événements, leur communication ainsi que payer nos charges fixes. Merci pour votre soutien !
 
 ## Nos Coordonnées
 

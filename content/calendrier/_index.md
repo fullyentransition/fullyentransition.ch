@@ -4,5 +4,5 @@ draft = false
 title = 'Calendrier'
 
 [params]
-subtitle = 'Retrouvez tous les évènements à venir'
+subtitle = 'Retrouvez tous les événements à venir'
 +++

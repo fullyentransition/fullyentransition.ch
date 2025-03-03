@@ -9,7 +9,7 @@ subtitle = 'Découvrez notre histoire et nos valeurs'
 
 ## Des citoyens et citoyennes de Fully
 
-Nous sommes des citoyens et citoyennes de Fully et ses environs, préoccupés par la fragilisation des conditions d’habitabilité de la Terre ainsi que la capacité des êtres humains à s’adapter aux changements à venir.
+Nous sommes des citoyens et citoyennes de Fully et ses environs, préoccupé·e·s par la fragilisation des conditions d’habitabilité de la Terre ainsi que la capacité des êtres humains à s’adapter aux changements à venir.
 
 ## Nos engagements pour la transition
 

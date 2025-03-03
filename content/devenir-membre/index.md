@@ -9,7 +9,7 @@ subtitle = 'Rejoignez-nous !'
 
 ## Comment devenir membre?
 
-Il suffit de venir nous retrouver à l'une de nos rencontres mensuelles (tous les 20 du mois) au rue de l'Église 14. Pour des raisons d'organisation, merci de nous prévenir par mail à info@fullyentransition.ch.
+Il suffit de venir nous retrouver à l'une de nos rencontres mensuelles (tous les 20 du mois) à la rue de l'Église 14. Pour des raisons d'organisation, merci de nous prévenir par mail à info@fullyentransition.ch.
 
 ## Qu'est-ce que cela implique?
 
@@ -17,4 +17,4 @@ En devenant membre, vous avez la possibilité de vous engager de différentes ma
 
 ## Être sympathisant·e
 
-Si vous ne souhaitez pas être membre mais souhaitez être informés des évènements par mail, vous pouvez devenir sympathisant en nous faisant la demande sous [info@fullyentransition.ch](mailto:info@fullyentransition.ch) ou directement via [Page de Contact](/contact)
+Si vous ne souhaitez pas être membre mais souhaitez être informé·e·s des événements par mail, vous pouvez devenir sympathisant·e en nous faisant la demande sous [info@fullyentransition.ch](mailto:info@fullyentransition.ch) ou directement via [Page de Contact](/contact)
