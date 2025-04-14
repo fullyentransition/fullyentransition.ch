@@ -1,6 +1,6 @@
 +++
 date = '2025-04-04'
-draft = false
+draft = true
 title = "De l'assiette à l'océan"
 
 [params]

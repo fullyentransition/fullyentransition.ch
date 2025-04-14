@@ -1,6 +1,6 @@
 +++
 date = '2024-11-09'
-draft = false
+draft = true
 title = 'La révolte paysanne 1953'
 
 [params]
