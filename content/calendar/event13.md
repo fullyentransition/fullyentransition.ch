@@ -7,7 +7,7 @@ title = 'Fully en Défi'
 location = "Ch. des Vignerons 10"
 dateEvent = '06.05.25'
 time = 'À 19h'
-picture = 'fdf_06_05_25'
+picture = 'fdf_06_05_25.jpeg'
 +++
 
 ### Défi du mois

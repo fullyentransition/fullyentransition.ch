@@ -5,6 +5,7 @@ title = 'Nous soutenir'
 
 [params]
 subtitle = 'Soutenez-nous !'
+picture = "/nous_soutenir/qr_code.png"
 +++
 
 ## Contribuons ensemble
