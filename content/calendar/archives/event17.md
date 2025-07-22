@@ -1,6 +1,6 @@
 +++
 date = '2024-11-09'
-draft = false
+draft = true
 title = "Fully en défi:  Je réduis ma production de déchets"
 
 [params]
