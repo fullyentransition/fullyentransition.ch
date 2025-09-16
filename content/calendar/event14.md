@@ -1,11 +1,12 @@
 +++
 date = '2024-11-09'
-draft = true
+draft = false
 title = 'Soirée jeux du lundi'
 
 [params]
 location = "Écolieu, rue de l’église 14"
 dateEvent = '28.04.25'
+systemDate = '2025-04-28'
 time = 'À 18h30'
 picture = 'soiree_jeu_avril25.png'
 +++

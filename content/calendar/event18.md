@@ -5,6 +5,7 @@ title = "Nuit des étoiles filantes : soirée d’observation à Fully"
 
 [params]
 location = "Rue de l’église 14 à 21h puis Belle Usine à partir de 22h"
+systemDate = '2025-08-12'
 dateEvent = 'Mardi 12 août'
 time = "Débute à 21h"
 picture = 'nuit_etoile.jpeg'

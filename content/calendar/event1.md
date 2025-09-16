@@ -1,6 +1,6 @@
 +++
 date = '2024-11-09'
-draft = true
+draft = false
 title = 'Tempête! - Les animaux dans la tourmente'
 
 [params]
@@ -8,7 +8,7 @@ location = 'Fully, Belle Usine'
 dateEvent = '02.04.25'
 systemDate = '2025-04-02'
 time = 'À 14h'
-picture = 'tempete'
+picture = 'tempete.jpeg'
 +++
 
 Vous êtes-vous déjà demandé comment les êtres vivants autour de vous prévoient les tempêtes.

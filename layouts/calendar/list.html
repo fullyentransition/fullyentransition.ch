@@ -1,0 +1,205 @@
+{{ define "body" }}
+<section class="hero has-background-primary-15 is-halfheight has-text-centered">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title has-text-primary-15-invert">Calendrier</p>
+      <p class="subtitle has-text-primary-15-invert">{{ .Params.subtitle }}</p>
+    </div>
+  </div>
+</section>
+
+<div>{{ .Content }}</div>
+
+{{ if .Pages }}
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="container mb-6">
+      <div class="title is-4">Filtrer les évènements</div>
+      <label class="label">Rechercher un évènement</label>
+      <input id="search-bar" class="textarea mb-2 is-warning" rows="1" placeholder="Rechercher"></input>
+      <div id="filter-buttons" class="buttons is-left">
+        <button id="filter-future" class="button is-warning is-light">
+          Évènements futurs
+        </button>
+        <button id="filter-past" class="button is-warning is-light">
+          Évènements passés
+        </button>
+        <button id="filter-all" class="button is-warning is-light">
+          Tous les évènements
+        </button>
+      </div>
+    </div>
+    <div class="title is-3" id="events-title">Évènements futurs</div>
+    <div id="cards" class="columns is-multiline">
+      {{ range (.Pages.ByParam "systemDate") }}
+      <div class="column is-one-third" data-system-date="{{ .Params.systemDate }}">
+        <a href="{{ .Page.Permalink }}">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-3by4">
+                <img src="/calendar/{{.Params.picture}}" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">{{ .Title }}</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="content has-text-justified">
+                  {{ .Summary | truncate 100 }}{{ if .Truncated }}{{ end }}
+                </div>
+                <br />
+                <time datetime="{{ .Params.systemDate }}">{{ .Params.publishingDate }}</time>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+    <div class="no-event-text">Aucun évènement ne correspond à la recherche</div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    let currentMode = "future";
+    const wrap = document.getElementById("cards");
+    const items = Array.from(wrap.children);
+    document.querySelector(".no-event-text").style.display = "none"
+
+
+    filterBy("future");
+    setTitle();
+
+    function parseDate(el) {
+      const d = new Date(el.getAttribute("data-system-date"));
+      return isNaN(d) ? new Date(0) : d;
+    }
+
+    function sortBy(dir) {
+      const sorted = items.slice().sort((a, b) => {
+        const da = parseDate(a).getTime();
+        const db = parseDate(b).getTime();
+        return dir === "asc" ? da - db : db - da;
+      });
+      sorted.forEach((n) => wrap.appendChild(n));
+    }
+
+    function search(input) {
+
+    }
+
+    function filterBy(mode) {
+      const now = new Date();
+      items.forEach((el) => {
+        const d = parseDate(el);
+        let show = true;
+        if (mode === "past") {
+          sortBy("des");
+          show = d < now;
+          document.getElementById("filter-past").style.border = "2px solid";
+          document.getElementById("filter-past").style.borderColor = "#ffb70f";
+          document.getElementById("filter-future").style.border = "none";
+          document.getElementById("filter-all").style.border = "none";
+
+
+        }
+        if (mode === "future") {
+          sortBy("des");
+          show = d >= now;
+          document.getElementById("filter-future").style.border = "2px solid";
+          document.getElementById("filter-future").style.borderColor = "#ffb70f";
+          document.getElementById("filter-past").style.border = "none";
+          document.getElementById("filter-all").style.border = "none";
+        }
+        if (mode === "all") {
+          document.getElementById("filter-all").style.border = "2px solid";
+          document.getElementById("filter-all").style.borderColor = "#ffb70f";
+          document.getElementById("filter-past").style.border = "none";
+          document.getElementById("filter-future").style.border = "none";
+        }
+        el.style.display = show ? "" : "none";
+      });
+    }
+
+    const titleEl = document.getElementById("events-title");
+
+    function setTitle(mode) {
+      if (mode === "past") titleEl.textContent = "Évènements passés";
+      else if (mode === "future") titleEl.textContent = "Évènements futurs";
+      else if (mode === "all") titleEl.textContent = "Tous les évènements";
+    }
+    setTitle();
+
+    const norm = (string) =>
+      (string || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/\p{Diacritic}/gu, "");
+
+    function getTitle(element) {
+      const title = element.querySelector(".card .title");
+      return title ? title.textContent.trim() : "";
+    }
+
+    const msg = document.querySelector(".no-event-text");
+    function search(query) {
+      const q = query.trim();
+      if (q === "") {
+        filterBy(currentMode);
+        msg.style.display = "none";
+        return;
+      }
+
+      const needle = norm(q);
+      let matches = 0;
+      items.forEach((el) => {
+        if (el.style.display !== "none") {
+          const ok = norm(getTitle(el)).includes(needle);
+          el.style.display = ok ? "" : "none";
+          if (ok) matches++;
+        }
+      });
+      msg.style.display = matches === 0 ? "block" : "none";
+    }
+
+
+    document.getElementById("filter-future").addEventListener("click", () => {
+      currentMode = "future";
+      filterBy(currentMode); setTitle(currentMode);
+    });
+    document.getElementById("filter-past").addEventListener("click", () => {
+      currentMode = "past";
+      filterBy(currentMode); setTitle(currentMode);
+    });
+    document.getElementById("filter-all").addEventListener("click", () => {
+      currentMode = "all";
+      filterBy(currentMode); setTitle(currentMode);
+    });
+
+    document
+      .getElementById("filter-past")
+      .addEventListener("click", () => setTitle("past"));
+    document
+      .getElementById("filter-future")
+      .addEventListener("click", () => setTitle("future"));
+    document
+      .getElementById("filter-all")
+      .addEventListener("click", () => setTitle("all"));
+
+    document.getElementById("search-bar").addEventListener("input", (e) => {
+      search(e.target.value);
+    });
+
+  })();
+</script>
+{{ else }}
+<section class="section is-max-desktop has-text-centered">
+  <p class="content is-normal">
+    Pas de contenu pour le moment ! Revenez plus tard
+  </p>
+</section>
+{{ end }} {{ end }}

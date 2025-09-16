@@ -1,6 +1,6 @@
 +++
 date = '2025-04-04'
-draft = true
+draft = false
 title = 'Si les glaciers ne revenaient pas'
 
 [params]
@@ -8,7 +8,7 @@ location = 'Fully, Belle Usine'
 dateEvent = '05.04.25'
 
 time = 'À 10h'
-picture = 'glacier'
+picture = 'glacier.jpeg'
 +++
 
 D’ici la fin du siècle la plupart des glaciers alpins auront disparu. Que deviendront les bisses valaisans, ce réseau d’irrigation traditionnel qui fonctionne avec l’eau de fonte des glaciers ? L’agriculture de montagne, le tourisme, la production d’énergie et les écosystèmes seront concernés.

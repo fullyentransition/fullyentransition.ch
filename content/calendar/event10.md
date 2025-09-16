@@ -1,6 +1,6 @@
 +++
 date = '2024-11-09'
-draft = true
+draft = false
 title = 'Fully en Défi'
 
 [params]
@@ -8,7 +8,7 @@ location = "Rue de l'Eglise 14"
 dateEvent = '04.03.25'
 systemDate = '2025-03-04'
 time = 'À 19h'
-picture = 'fdf_04_03_25'
+picture = 'fdf_04_03_25.jpeg'
 +++
 
 ### Défi du mois

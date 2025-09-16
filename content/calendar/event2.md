@@ -1,14 +1,14 @@
 +++
 date = '2024-11-09'
-draft = true
+draft = false
 title = 'Alliances terrestres'
 
 [params]
 location = 'Fully, Belle Usine'
 dateEvent = '03.04.25'
-systemDate = '2025-04-03'
+systemDate = '2025-04-02'
 time = 'À 19h'
-picture = 'alliance'
+picture = 'alliance.jpeg'
 +++
 
 La lutte locale contre le projet de l’autoroute A69 prévoyant de relier Castres à Toulouse a démarré depuis de nombreuses années. Voilà qu’elle a pris une nouvelle dimension depuis 2021, non seulement en raison des premiers signes concrets de sa construction (usines à bitume, abattage des arbres, démarrage des travaux…) mais surtout en raison de la multiplication des collectifs s’opposant à ce projet d’autoroute aberrant qui s’acharne à fracturer le territoire.

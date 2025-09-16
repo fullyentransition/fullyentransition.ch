@@ -1,7 +1,7 @@
 +++
 date = '2024-11-09'
 draft = false
-title = 'Actualités'
+title = 'Projets'
 [params]
-subtitle = "Quoi de neuf ?"
+subtitle = "Nos projets en cours et passés "
 +++

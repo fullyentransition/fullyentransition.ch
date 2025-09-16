@@ -1,6 +1,6 @@
 +++
 date = '2024-11-09'
-draft = true
+draft = false
 title = 'Sauvages'
 
 [params]
@@ -8,7 +8,7 @@ location = 'Fully, Belle Usine'
 dateEvent = '06.04.25'
 systemDate = '2025-04-06'
 time = 'À 10h'
-picture = 'sauvages'
+picture = 'sauvages.jpeg'
 +++
 
 À Bornéo, près de la forêt tropicale, Kéria recueille un bébé orang-outan dans la plantation où travaille son père. Au même moment, Selaï, son cousin, vient trouver refuge chez eux pour échapper au conflit qui oppose sa famille nomade aux compagnies forestières.

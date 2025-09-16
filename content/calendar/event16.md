@@ -1,11 +1,12 @@
 +++
 date = '2024-11-09'
-draft = true
+draft = false
 title = "Journée jardin durable"
 
 [params]
 location = "Rte de Mazembroz 38"
 dateEvent = 'Samedi 24 mai'
+systemDate = '2025-05-24'
 time = "Débute à 9h, jusqu'à 16h"
 picture = 'jardin_durable.jpg'
 +++

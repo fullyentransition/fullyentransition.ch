@@ -1,11 +1,12 @@
 +++
 date = '2024-11-09'
-draft = true
+draft = false
 title = "Fully en défi:  Je réduis ma production de déchets"
 
 [params]
 location = "Rue de l'Eglise 14, Fully"
 dateEvent = 'Mardi 3 juin'
+systemDate = '2025-06-03'
 time = "Débute à 19h"
 picture = 'fed_juin_25.jpg'
 +++

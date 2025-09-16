@@ -1,11 +1,12 @@
 +++
 date = '2024-11-09'
-draft = true
+draft = false
 title = 'Fully en Défi'
 
 [params]
 location = "Ch. des Vignerons 10"
 dateEvent = '06.05.25'
+systemDate = '2025-05-06'
 time = 'À 19h'
 picture = 'fdf_06_05_25.jpeg'
 +++

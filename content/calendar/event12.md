@@ -1,6 +1,6 @@
 +++
 date = '2024-11-09'
-draft = true
+draft = false
 title = 'Yoga pour les yeux'
 
 [params]
@@ -8,7 +8,7 @@ location = "Rue de l'Eglise 14"
 dateEvent = '06.03.25 et 13.03.25'
 systemDate = '2025-03-06'
 time = 'Voir horaire'
-picture = 'yoga_yeux'
+picture = 'yoga_yeux.jpeg'
 +++
 
 Un atelier pour vous aider à reprendre en main la santé de vos yeux et empêcher la détérioration de votre vue.

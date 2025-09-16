@@ -21,7 +21,6 @@
         <div class="column is-one-third has-text-centered">
           <div class="container">
             <span class="icon is-medium mb-3">
-              <!-- Ajout de mb-3 directement ici -->
               <i class="fa-solid fa-location-pin fa-2x"></i>
             </span>
             <p class="title is-5">{{.Params.location}}</p>
@@ -39,7 +38,6 @@
         <div class="column is-one-third has-text-centered">
           <div>
             <span class="icon is-medium mb-3">
-              <!-- Ajout de mb-3 directement ici -->
               <i class="fa-solid fa-clock fa-2x"></i>
             </span>
             <p class="title is-5">{{.Params.time}}</p>
@@ -57,7 +55,7 @@
   <div class="container is-max-desktop has-text-centered">
     <figure class="image is-inline-block" style="max-width: 600px; width: 100%">
       <img
-        src="{{.Params.description_picture}}"
+        src="/calendar/{{ .Params.description_picture }}"
         style="width: 100%; height: auto"
       />
     </figure>
