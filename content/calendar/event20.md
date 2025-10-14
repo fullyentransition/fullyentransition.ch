@@ -6,7 +6,7 @@ title = "Fully en Défi : fresque du numérique"
 [params]
 location = "Local de Fully en Transition Rue de l’Eglise 14"
 systemDate = '2025-11-04'
-dateEvent = 'mardi 4 novembre 2025'
+dateEvent = 'Mardi 4 novembre 2025'
 time = "de 18h00 à 21h"
 picture = 'slide1.png'
 +++
