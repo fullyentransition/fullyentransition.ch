@@ -17,7 +17,7 @@ Fully en Transition a le plaisir d’accueillir l’association Zero Waste Switz
 
 ## Prix
 
-20 francs à régler sur place
+Entrée prix libre (prix de soutien 20.-)
 
 ## Inscription
 
