@@ -1,0 +1,28 @@
+{{ define "body" }}
+<section class="hero has-background-primary-15 is-halfheight has-text-centered">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title has-text-primary-15-invert" style="margin-bottom: 1rem">
+        {{ .Title }}
+      </p>
+      <p class="subtitle has-text-primary-15-invert" style="margin-top: 1rem">
+        {{ .Params.subtitle}}
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div
+    id="etickets-widget"
+    class="container is-max-desktop has-text-centered content"
+    style="margin-top: 3rem; padding: 2rem 0"
+  ></div>
+  {{ `
+  <script
+    id="etickets"
+    src="https://infomaniak.events/scripts/shop/GFE4WY97K3"
+  ></script>
+  ` | safeHTML }}
+</section>
+
+{{ end }}

@@ -21,13 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Récupérer les valeurs des champs Email et Message
-document.getElementById('submitBtn').addEventListener('click', function () {
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
+const submitBtn = document.getElementById('submitBtn');
+if (submitBtn) {
+    submitBtn.addEventListener('click', function () {
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
 
-    // Créer l'URL mailto avec l'email et le message
-    var mailtoLink = "mailto:contact@association.org?subject=Message depuis le site&body=Email: " + encodeURIComponent(email) + "%0D%0A%0D%0A" + encodeURIComponent(message);
+        // Créer l'URL mailto avec l'email et le message
+        var mailtoLink = "mailto:contact@association.org?subject=Message depuis le site&body=Email: " + encodeURIComponent(email) + "%0D%0A%0D%0A" + encodeURIComponent(message);
 
-    // Appliquer le lien mailto à l'élément
-    this.href = mailtoLink;
-});
+        // Appliquer le lien mailto à l'élément
+        this.href = mailtoLink;
+    });
+}
+
