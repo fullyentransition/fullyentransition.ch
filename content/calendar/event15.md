@@ -1,6 +1,6 @@
 +++
-date = '2024-11-09'
-draft = false
+date = '2025-09-16'
+draft = true
 title = "Ouverture de l'écolieu"
 
 [params]
