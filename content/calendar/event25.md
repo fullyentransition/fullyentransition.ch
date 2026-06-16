@@ -5,7 +5,7 @@ title = "Une épicerie participative à Fully ? Film et discussion"
 
 [params]
 location = "Petit Pont, Fully"
-systemDate = '2026-12-13'
+systemDate = '2026-06-13'
 dateEvent = 'Le 12 juin 2026'
 time = "de 19h à 21h"
 picture = 'epicerie.png'
