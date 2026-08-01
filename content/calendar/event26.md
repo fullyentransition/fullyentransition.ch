@@ -8,7 +8,7 @@ location = "Torgon, Parking du plan de Croix"
 systemDate = '2026-12-13'
 dateEvent = 'Le 12 août 2026'
 time = "dès 17h30"
-picture = 'affiche-etoile.png'
+picture = 'etoile-2.png'
 +++
 
 Observation exceptionnelle de l'éclipse solaire (environ 90%) de l'observation des étoiles filantes
